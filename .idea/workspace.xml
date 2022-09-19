@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5e439a24-42e5-41d5-8f0a-07d8d8dfe914" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/currantino/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/currantino/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/currantino/MinesweeperApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/currantino/MinesweeperApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,16 +33,17 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/boi/Desktop/profi/fxminesweeper/hex-mine-sweeper",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/boi/Desktop/profi/fxminesweeper/hex-mine-sweeper&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/com/github/currantino" />
@@ -51,7 +52,7 @@
       <recent name="com.example.demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.github.currantino.HelloApplication">
+  <component name="RunManager" selected="Application.MinesweeperApplication">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.HelloApplication" />
       <module name="hex-mine-sweeper" />
@@ -65,8 +66,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.github.currantino.HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.currantino.HelloApplication" />
+    <configuration name="MinesweeperApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.currantino.MinesweeperApplication" />
       <module name="hex-mine-sweeper" />
       <extension name="coverage">
         <pattern>
@@ -80,7 +81,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.github.currantino.HelloApplication" />
+        <item itemvalue="Application.MinesweeperApplication" />
         <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
@@ -95,7 +96,8 @@
       <updated>1663440939359</updated>
       <workItem from="1663440940862" duration="7244000" />
       <workItem from="1663575959130" duration="324000" />
-      <workItem from="1663607647718" duration="1759000" />
+      <workItem from="1663607647718" duration="6972000" />
+      <workItem from="1663692193166" duration="1209000" />
     </task>
     <servers />
   </component>

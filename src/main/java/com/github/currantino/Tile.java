@@ -5,6 +5,9 @@ import javafx.scene.paint.Color;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Polygon;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Tile extends Polygon {
     private final static double r = 20; // the inner radius from hexagon center to outer corner
     private final static double innerRadius = Math.sqrt(r * r * 0.75); // the inner radius from hexagon center to middle of the axis
@@ -15,7 +18,7 @@ public class Tile extends Polygon {
     private boolean isFlagged;
     private boolean isBomb;
     private boolean isEmpty;
-    private int bombsAround;
+    private int bombsAround = -1;
     int xStartOffset = 40; // offsets the entire field to the right
     int yStartOffset = 40; // offsets the entire fields downwards
 
@@ -32,14 +35,9 @@ public class Tile extends Polygon {
                 x + TILE_WIDTH, y,
                 x + innerRadius, y - r * 0.5
         );
-
-        // set up the visuals and a click listener for the tile
-        if (col % 2 == 0)
-        setFill(Color.ANTIQUEWHITE);
-        else setFill(Color.GREENYELLOW);
+        setImage("cover");
         setStrokeWidth(1);
         setStroke(Color.BLACK);
-//        setOnMouseClicked(e -> System.out.println("Clicked: " + this));
     }
 
     public Coordinates getCoordinates() {
@@ -108,8 +106,14 @@ public class Tile extends Polygon {
                 '}';
     }
 
-    public void setImage(String filename) {
-        Image img = new Image(String.valueOf(getClass().getResource(String.format("%s%s", filename, EXTENSION))));
-        this.setFill(new ImagePattern(img));
+    public void setImage(String name) {
+        if (images.containsKey(name)) setFill(images.get(name));
+        else {
+            ImagePattern img = new ImagePattern(new Image(String.valueOf(getClass().getResource(String.format("%s%s", name, EXTENSION)))));
+            setFill(img);
+            images.put(name, img);
+        }
+
     }
+    private Map<String, ImagePattern> images = new HashMap<>();
 }
