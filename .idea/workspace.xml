@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5e439a24-42e5-41d5-8f0a-07d8d8dfe914" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/currantino/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/currantino/Coordinates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/currantino/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/currantino/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/currantino/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/currantino/Tile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +94,7 @@
       <updated>1663440939359</updated>
       <workItem from="1663440940862" duration="7244000" />
       <workItem from="1663575959130" duration="324000" />
+      <workItem from="1663607647718" duration="304000" />
     </task>
     <servers />
   </component>

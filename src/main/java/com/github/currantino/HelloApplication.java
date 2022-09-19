@@ -276,18 +276,8 @@ public class HelloApplication extends Application {
         int row = tile.getCoordinates().getY();
         int col = tile.getCoordinates().getX();
 
-        if (isBombOnTheTop(row, col)) {
-            System.out.println("top");
-            count++;
-        }
-
         if (isBombOnTheRight(row, col)) {
             System.out.println("right");
-            count++;
-        }
-
-        if (isBombOnTheBottom(row, col)) {
-            System.out.println("bottom");
             count++;
         }
 
@@ -295,23 +285,36 @@ public class HelloApplication extends Application {
             System.out.println("left");
             count++;
         }
+        if (isBombOnTheTop(row, col)) {
+            System.out.println("top");
+            count++;
+        }
+        if (isBombOnTheBottom(row, col)) {
+            System.out.println("bottom");
+            count++;
+        }
 
-        if (isBombOnTheBottomRight(row, col)) {
-            System.out.println("bottom right");
-            count++;
+        if (row % 2 == 0) {
+            if (isBombOnTheTopLeftCorner(row, col)) {
+                System.out.println("top left");
+                count++;
+            }
+            if (isBombOnTheBottomLeftCorner(row, col)) {
+                System.out.println("bottom left");
+                count++;
+            }
+        } else {
+            if (isBombOnTheTopRightCorner(row, col)) {
+                System.out.println("top right");
+                count++;
+            }
+            if (isBombOnTheBottomRight(row, col)) {
+                System.out.println("bottom right");
+                count++;
+            }
         }
-        if (isBombOnTheTopRightCorner(row, col)) {
-            System.out.println("top right");
-            count++;
-        }
-        if (isBombOnTheTopLeftCorner(row, col)) {
-            System.out.println("top left");
-            count++;
-        }
-        if (isBombOnTheBottomLeftCorner(row, col)) {
-            System.out.println("bottom left");
-            count++;
-        }
+
+
         return count;
     }
 
